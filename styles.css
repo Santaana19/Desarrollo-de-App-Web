@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* La altura de la pantalla */
+}
+
+.login-section {
+    flex: 1; /* La sección del login ocupa el 50% de la pantalla */
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* Para que el logo se posicione en relación con este contenedor */
+}
+
+.logo-container {
+    position: absolute; /* Esto permite que el logo se posicione de forma absoluta dentro de la sección */
+    top: 30px; /* Ajusta el margen superior */
+    left: 30px; /* Ajusta el margen izquierdo */
+}
+
+.logo {
+    width: 150px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #363232;
+    margin-bottom: 10px;
+    font-size: 20px; /* Ajusta el tamaño del texto del h2 */
+}
+
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Bordes redondeados para los campos de entrada */
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0073e6;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 25;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de la imagen (fondo) */
+.image-section {
+    flex: 1; /* La sección de la imagen ocupa el 50% de la pantalla */
+    background-image: url('https://img.freepik.com/foto-gratis/fondo-gotas-agua_23-2148098971.jpg'); /* Cambia esta URL por la imagen de fondo que deseas */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+}
+
+h3 {
+    font-size: 15px; /* Ajusta el tamaño del texto */
+    color: #505050; /* Cambia el color del texto */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 10px; /* Espacio debajo del h3 */
+    font-weight: normal; /* Ajusta el grosor de la fuente */
+    font-family: 'Arial', sans-serif; /* Establece la familia tipográfica */
+    line-height: 1.5; /* Ajusta la altura de la línea para mejor legibilidad */
+}
+
+h2 {
+    text-align: center;
+    color: #505050;
+    margin-bottom: 10px;
+    font-size: 24px; /* Ajusta el tamaño del texto del h2 */
+}
+
+h2 .highlight {
+    color: #00cbbf; /* El color que elijas para resaltar el texto */
+    font-weight: bold; /* Hace que el texto sea más destacado */
+}
